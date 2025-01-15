@@ -1,0 +1,29 @@
+<script type="text/javascript">
+
+    // >, <, >=, <=, ==, !=
+    // Peça ao usuário um nome de usuário e uma senha. Verifique se coincidem com:
+    // Nome de usuário: "admin"
+    // Senha: "1234" 
+    //Exiba uma mensagem de "Acesso permitido" ou "Acesso negado".
+
+    const fixo = "admin";
+    const codigo = 1234;
+
+    let cadastro = prompt(" Crie um Login de usuário por favor :) ");
+    let passe = prompt(" Crie uma senha de acesso ");
+
+
+    if (cadastro == fixo && passe == codigo) {
+        document.write(" <h1> <b> Acesso Permitido </b> </h1>");
+        document.body.style.backgroundColor = "#00FF00";
+    }
+
+    else {
+        document.write(" <h1> <b> Acesso Negado !!! :( </b> </h1> ")
+        document.body.style.backgroundColor = "#FF0000";
+    }
+
+</script>
+</body>
+
+</html>
