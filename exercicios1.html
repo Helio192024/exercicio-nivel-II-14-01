@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script type="text/javascript">
+
+    //Peça um número e determine em qual intervalo ele se encontra:
+    // De 0 a 10: "Baixo"
+    // De 11 a 20: "Médio"
+    // De 21 a 30: "Alto"
+    // Fora desses intervalos: "Fora do escopo"
+
+    let pc = prompt(" Digite um número para determinar o intervalo ! ")
+
+    if (pc >= 0 && pc <= 10) {
+        document.write("<p> <b >Baixo </b> ");
+        document.body.style.backgroundColor = "#7FFF00";
+    }
+    else if (pc >= 11 && pc <= 20) {
+        document.write("<p> <b> Médio </b> ");
+        document.body.style.backgroundColor = "#7B68EE";
+    }
+    else if (pc >= 21 && pc <= 30) {
+        document.write("<p> <b>  Alto </b> ");
+        document.body.style.backgroundColor = "#FF4500";
+    }
+    else {
+        alert(" Fora do Escopo !!")
+    }
+</script>
+</body>
+
+</html>
