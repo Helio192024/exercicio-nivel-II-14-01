@@ -3,14 +3,16 @@
     //Não for divisível por 100, a menos que também seja divisível por 400
 
 
-    let usuario = prompt("Digite um ano de sua escolha, vamos consultar se e bissexto ? :) ");
-    
+    let usuario = prompt("Digite um ano de sua escolha, vamos consultar se ele é bissexto ? :) ");
+    let divisao = usuario % 4;
+    alert("O Resultado do cálculo é " + divisao + " ! ");
 
-
-
-
-
-
-
-
+    if (divisao == 0) {
+        document.write("<h1> <b > E um Ano Bissexto </b> </h1>");
+        document.body.style.backgroundColor = "#7FFF00";
+    }
+    else if (divisao > 0) {
+        document.write(" <h1> <b> Não e um ano Bissexto </b> </h1> ");
+        document.body.style.backgroundColor = "#DC143C";
+    }
 </script>
